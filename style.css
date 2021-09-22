@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 
 
 
@@ -79,13 +79,31 @@ header .icon-inicio div{
     color: var(--cafe-claro);
     display: inline-block;
     position: relative;
-    top: 4rem;left: 35%;
+    top: -1rem;left: 35%;
     width: 30rem;
     border-radius: .5rem;
     height: 5rem;
     text-align: center;
     padding: 1rem 0;
     text-transform: uppercase;
+}
+
+.btnProd{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 1.6rem;
+   
+    color: var(--cafe-oscuro);
+    background: var(--rock-blue);
+    cursor: pointer;
+    
+}
+
+.btnProd:hover{
+    transform: scale(1.1);
+    color: var(--cafe-claro);
 }
 
 .foter{
@@ -122,6 +140,7 @@ header .icon-inicio div{
     padding: 1rem 0;
     font-size: 4rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .titulo-page a{
@@ -135,9 +154,9 @@ header .icon-inicio div{
 }
 
 .icon-inicio{
-    width: 7rem;
+    width: 6rem;
     position: absolute;
-    left: 92%;
+    left: 89%;
     top: 7rem;
     color: var(--cafe-oscuro);
 }
@@ -148,7 +167,7 @@ header .icon-inicio div{
 
 
 .main-nav .menu{
-   
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -202,13 +221,17 @@ header .icon-inicio div{
     width: 20rem;
     text-align: center;
     font-size: 2rem;
+    padding-left: 0;
 }
 
 .index-content{
-    position: relative;
+    /* position: relative;
     top: 4rem; left: 34%;right: 34%;
+    */
     width: 25rem;
-    height: 25rem;
+    height: 25rem; 
+    margin:  30% auto;
+
 }
 
 .index-content img{
@@ -217,23 +240,296 @@ header .icon-inicio div{
     border-radius: 50%;
 }
 
+/* ================================== CATALOGOS ===================================== */
+
+
+
+.tienda .logo-tienda{
+    position: relative;
+    top: 2rem;left: 45%;
+    width: 10rem;
+    
+}
+
+.tienda .logo-tienda img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.tienda .box-container{
+    width: 80%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    background: var(--cafe-claro);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.tienda .box-container .box{
+    padding: 3rem 2rem;
+    background: var(--ship-cove);
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.tienda .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.tienda .box-container .box h3{
+    text-transform: uppercase;
+    color: var(--cafe-claro);
+    font-size: 2.7rem;
+    padding-top: 1rem;
+}
+
+.tienda .box-container .box p{
+    font-size: 2.4rem;
+    color: var(--cafe-oscuro);
+}
+
+.tienda .box-container .box .btnProd{
+    height: 3rem;
+    font-size: 1.3rem;
+    padding-top: .5rem;
+}
+
+
+/* ======== pagination ================ */
+.pagination{
+    background-color: var(--cafe-claro);
+    display: flex;
+
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    height: 3rem;
+  
+    width: 50%;
+}
+
+.pagination a{
+    width: 50%;
+    height: 100%;
+    padding-top: 1rem;
+    text-align: center;
+    color: var(--cafe-oscuro);
+    font-size: 19px;
+    font-weight: 700;
+    transition: .2s linear;
+}
+
+.pagination a:hover{
+    background-color: var(--cafe-oscuro);
+    color: var(--cafe-claro);
+}
+
+
+/* ============================================== CATEGORIAS ================================================== */
+
+
+.categorias .box-container{
+    width: 80%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    background: var(--cafe-claro);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.categorias .box-container .box{
+    padding: 3rem 2rem;
+    background: var(--ship-cove);
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.categorias .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.categorias .box-container .box h3{
+    text-transform: uppercase;
+    color: var(--cafe-claro);
+    font-size: 2.7rem;
+    padding-top: 1rem;
+}
+
+.categorias .box-container .box a{
+    font-size: 1.4rem;
+    color: var(--cafe-oscuro);
+}
+
+.categorias .box-container .box a:hover{
+    color: var(--cafe-claro);
+}
+
+
+/* ============================================== DETALLE PRODUCTO ================================================== */
+
+.detalle .container{
+    margin: 2rem auto;
+    padding: 3rem;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    gap: 1.5rem;
+    background: var(--cafe-claro);
+}
+
+.detalle .container img{
+    width: 30%;
+    border-radius: .5rem;
+    flex: 1 1 15rem;
+}
+
+.detalle .container .info{
+    flex: 1 1 15rem;
+}
+
+.detalle .container h4{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--cafe-oscuro);
+}
+
+.detalle .container .btnProd{
+    height: 3rem;
+    width: 17rem;
+    font-size: 1.5rem;
+    padding-top: .3rem;
+}
+
+.detalle .container p{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.2rem;
+    
+}
+
+.detalle .container input{
+    width: 10%;
+    display: block;
+    border-radius: .5rem;
+    padding-left: .3rem;
+    padding-bottom: .4rem;
+    text-align: center;
+}
+
+
+
+/* ============================================== NOVEDADES ================================================== */
+
+
+.foro .box-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    gap: 1.5rem;
+    
+}
+
+
+.foro .box-container .box{
+    height: 34rem;
+    display: flex;
+    padding: 2rem;
+    gap: 1.5rem;
+    background: var(--cafe-claro);
+    border: .5rem solid var(--cafe-oscuro);
+    object-fit: cover;
+    margin: .5rem;
+
+}
+
+.foro .box-container .box .info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.foro .box-container .box .info p{
+    position: relative;
+    top: 2.5rem;
+    width: 100%;
+   color: #333;
+}
+
+.foro .box-container .box img{
+    width: 50%;
+}
+
+.foro .box-container .box .info h3{
+    font-size: 2.7rem;
+    color: var(--cafe-oscuro);
+}
+
+.foro .box-container .box .info p a{
+    color: var(--ship-cove);
+}
 
 
 
 
+/* ============================================== DETALLE NOVEDADES ================================================== */
+
+.detalle-foro{
+    
+}
+
+.detalle-foro .box{
+    background: #beae95;
+    border-radius: .5rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+}
 
 
+.detalle-foro .box img{
+    margin-top: 1rem;
+    flex: 1 1 25rem;
+    border-radius: .5rem;
+    object-fit: cover;
+
+    max-height: 45rem;
+}
+
+.detalle-foro .box .info{
+    padding: 3rem;
+}
+
+.detalle-foro .box .info h3{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--cafe-oscuro);
+}
 
 
-
-
-
-
-
-
-
-
-
+.detalle-foro .box .info .content{
+    margin-bottom: 5rem;
+    color: #333;
+    font-size: 1.5rem;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
 
 
 
@@ -276,10 +572,32 @@ header .icon-inicio div{
         font-size: 62.5%;
     }
     
+    header  .icon-inicio{
+        width: 8rem;
+        left: 90%;
+    }
+
+    .heading{
+        left: 30%;
+    }
+
+    .tienda .logo-tienda{
+        left: 43%;
+    }
+
+    .pagination a{
+        padding-top: 0;
+    }
+
+    .foro .box-container .box .info p{
+        height: 12rem;
+    }
+
+
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
     html{
         font-size: 55%;
     }
@@ -301,10 +619,12 @@ header .icon-inicio div{
     }
 
     header  .icon-inicio{
-        width: 12rem;
-        top: 3.4rem;
+        width: 18rem;
+        top: 2.5rem;
         position: absolute;
-        left: 77%;
+        left: 65%;
+        text-align: center;
+        
        
     }
 
@@ -315,12 +635,15 @@ header .icon-inicio div{
     }
 
     header .main-nav .menu{
-        position: relative;
+        position: absolute;
         display: block;
-        top: 0%; right: 0; left: 0;
+        top: 9%; left: -110%;
+        width: 100%;
         background: var(--cafe-claro);
         border-top: .1rem solid rgba(255, 255, 255, .2);
         padding: 1rem 2rem;
+        z-index: 1000;
+        transition: all .5s linear;
         /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
         /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
     }
@@ -332,7 +655,8 @@ header .icon-inicio div{
     }
 
     header .main-nav .menu.active{
-        display: none;
+        left:  0%;
+       
     }
 
     header .main-nav .menu .btn-submenu:hover .submenu{
@@ -346,8 +670,17 @@ header .icon-inicio div{
     header .main-nav .menu .btn-submenu:hover .submenu.actives{
         display: none;
     }
-        
 
+
+    
+    header .icon-inicio div{
+        height: 5rem;
+        width: 5rem;
+        font-size: 1.6rem;
+        padding-top: 1.4rem;
+    }
+    
+   
    
 
     header .main-nav .menu .btn-submenu .submenu-item a{
@@ -362,6 +695,36 @@ header .icon-inicio div{
         margin: 1.5rem 0;
         background: var(--cafe-oscuro);
     } 
+
+    .heading{
+        left: 25%;
+    }
+
+
+
+    /* ===== novedades ====== */
+    .foro .box-container .box{
+        flex-direction: column;
+        height: 60rem;
+    }
+
+    .foro .box-container .box img{
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+    }
+
+
+    .foro .box-container .box .info p{
+        font-size: 1.5rem;
+    }
+
+    
+    .detalle-foro .box .info .content{
+        font-size: 2rem;
+        width: 100%;
+    }
+
 }
 
 
@@ -370,6 +733,51 @@ header .icon-inicio div{
         font-size: 50%;
     }
     
+    header .titulo-page{
+       
+        font-size: 2rem;
+    }
+
+    header .titulo-page a{
+        position: absolute;
+        width: 20%;
+    }
+
+    header .main-nav .menu{
+        top: 9rem;
+    }
+
+    header .icon-inicio{
+        left: 55%;
+    }
+
+    .heading{
+        width: 75%;
+        left: 16%;
+    }
+
+    .tienda .logo-tienda{
+        left: 35%;
+    }
+
+    .index-content{
+        left: 24%;
+    }
+
+    .foro .box-container .box{
+       
+        height: 64rem;
+    }
+
+    .foro .box-container .box img{
+        height: 50%;
+    }
+
+    .foro .box-container .box .info p{
+        font-size: 1.5rem;
+    }
+    
+   
 }
 
 

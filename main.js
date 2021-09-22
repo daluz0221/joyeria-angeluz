@@ -18,6 +18,7 @@ document.querySelector('.btn-submenu').onclick = () => {
 
 btnMenu.addEventListener("click", () => {
     menu.classList.toggle('active')
+   
 });
 
 
