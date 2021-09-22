@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+
+:root{
+    --gold:  rgb(228, 138, 29);
+    --cafe-oscuro: #645347;
+    --cafe-claro: #DBC8AB;
+    --rock-blue: #9FBECF;
+    --ship-cove: #778EBC;
+    --degradado-azul: linear-gradient(90deg, var(--rock-blue), var(--ship-cove));
+    --degradado-cafe: linear-gradient(90deg, var(--cafe-claro), var(--cafe-oscuro));
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+
+body{
+  /* background-image: url("fondo-mejor.jpeg");   */
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("fondo-mejor.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Akaya Kanadaka', cursive;
+  height: 100vh;
+  transition: all .4s linear;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+header .icon-inicio div{
+    background: var(--ship-cove);
+    height: 2.2rem;
+    width: 2.5rem;
+    line-height: 2.2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    margin-right: .3rem;
+    
+}
+
+.fa-shopping-cart a{
+    color: var(--cafe-oscuro);
+}
+
+.icon-inicio div:hover{
+    background: var(--cafe-claro);
+    color: var(--cafe-oscuro);
+}
+
+.heading{
+    background: var(--cafe-oscuro);
+    color: var(--cafe-claro);
+    display: inline-block;
+    position: relative;
+    top: 4rem;left: 35%;
+    width: 30rem;
+    border-radius: .5rem;
+    height: 5rem;
+    text-align: center;
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+.foter{
+    position: relative;
+    bottom: 0;
+    background: var(--cafe-oscuro);
+    width: 100%;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foter .footer__menu{
+    list-style: none;
+}
+
+.footer__menu-a{
+    font-size: 2rem;
+    color: var(--cafe-claro);
+    transition: all .2s linear;
+}
+
+.footer__menu-a:hover{
+    color: var(--rock-blue);
+}
+
+
+
+.titulo-page{
+    display: block;
+    background: var(--cafe-oscuro);
+    height: 9rem;
+    padding: 1rem 0;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.titulo-page a{
+    color: var(--cafe-claro);
+    letter-spacing: .5rem;
+}
+
+.main-nav{
+    background: var(--cafe-oscuro);
+
+}
+
+.icon-inicio{
+    width: 7rem;
+    position: absolute;
+    left: 92%;
+    top: 7rem;
+    color: var(--cafe-oscuro);
+}
+
+.fa-bars{
+    display: none;
+}
+
+
+.main-nav .menu{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-nav .menu .item{
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+
+.main-nav .menu .item a{
+    color: var(--cafe-claro);
+    transition: all .2s linear;
+}
+
+.main-nav .menu .item a:hover{
+    color: var(--rock-blue);
+}
+
+
+.main-nav .menu .submenu{
+    display: none;
+
+}
+
+.main-nav .menu .submenu .submenu-item{
+    list-style: none;
+    transition: all .2s linear;
+}
+
+
+.main-nav .menu .submenu .submenu-item a{
+
+    color: var(--cafe-oscuro);
+}
+
+.main-nav .menu .submenu .submenu-item:hover{
+    background: var(--cafe-oscuro);
+}
+
+.main-nav .menu .submenu .submenu-item:hover a{
+    color: var(--cafe-claro);
+}
+
+.main-nav .menu .btn-submenu:hover .submenu{
+    display: block;
+    position: absolute;
+    background: var(--cafe-claro);
+    border-radius: .5rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.index-content{
+    position: relative;
+    top: 4rem; left: 34%;right: 34%;
+    width: 25rem;
+    height: 25rem;
+}
+
+.index-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width:991px) {
+
+    html{
+        font-size: 62.5%;
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 55%;
+    }
+
+    header .main-nav .icon-inicio{
+        display: none;
+    }
+
+    .fa-bars{
+        display: inline-block;
+    }
+
+    header .titulo-page{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-size: 2.7rem;
+        text-align: start;
+        
+    }
+
+    header  .icon-inicio{
+        width: 12rem;
+        top: 3.4rem;
+        position: absolute;
+        left: 77%;
+       
+    }
+
+    header  .icon-inicio a i{
+        margin-left: 2.2rem;
+        font-size: 3.5rem;
+        color: var(--cafe-claro);
+    }
+
+    header .main-nav .menu{
+        position: relative;
+        display: block;
+        top: 0%; right: 0; left: 0;
+        background: var(--cafe-claro);
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    }
+
+    header .main-nav .menu .btn-submenu:hover .submenu{
+         display: none;
+        
+        
+    }
+
+    header .main-nav .menu.active{
+        display: none;
+    }
+
+    header .main-nav .menu .btn-submenu:hover .submenu{
+        position: relative;
+        padding-left: 1.2rem;
+        display: block;
+        width: 100%;
+        background: var(--cafe-oscuro);
+    }
+
+    header .main-nav .menu .btn-submenu:hover .submenu.actives{
+        display: none;
+    }
+        
+
+   
+
+    header .main-nav .menu .btn-submenu .submenu-item a{
+        color: var(--cafe-claro);
+        text-align: start;
+    }
+
+    header .main-nav .menu .item a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: var(--cafe-oscuro);
+    } 
+}
+
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
